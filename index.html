@@ -26,9 +26,9 @@
             </div>
             <div class="col-md-6">
                 <div class="input-section half-width">
-                    <input class="form-control" type="text">
-                    <div class="numbers">
-                        <div class="calc-body">
+                    <input id="type-number" class="form-control" type="text">
+                    <div  class="numbers">
+                        <div id="key-pad" class="calc-body">
                             <div class="calc-button-row">
                               <div class="button">7</div>
                               <div class="button">8</div>
@@ -50,7 +50,7 @@
                                 <div class="button">C</div>
                             </div>
                             <div>
-                                <button type="submit" class="submit-btn">Submit</button>
+                                <button type="submit" id="submit-btn" class="submit-btn">Submit</button>
                                 <p class="action-left">3 try left</p>
                             </div>
                     </div>
@@ -58,13 +58,11 @@
             </div>
         </div>
         <div class="notify-section">
-            <p class="notify">❌ Pin Didn't Match, Please try again</p>
-            <p class="notify">✅ Pin Matched... Secret door is opening for you</p>
+            <p class="notify" id="error-msg" style="display: none;">❌ Pin Didn't Match, Please try again</p>
+            <p class="notify" id="success-msg" style="display: none;">✅ Pin Matched... Secret door is opening for you</p>
         </div>
     </div>
-    <span>
-        <h1>Lorem ipsum dolor sit amet.</h1>
-    </span>
-    <script src="./app.js"></script>
+
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>
